@@ -18,6 +18,18 @@ body {
     color: red;
 }
 
+.profile__header h1, .profile__header h2 {
+    margin: 0;
+}
+
+.profile__header h2 {
+    font-weight: 400;
+}
+
+.profile__header, .profile__about {
+    text-align: center;
+}
+
 .profile__about div {
     background-color: #8d5fe9;
     padding: 16px;
@@ -30,4 +42,18 @@ body {
 
 a.destaque {
     color: blue;
+}
+
+.profile {
+    margin-top: 100px;
+}
+
+.profile__header img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* manter a proporção da imagem, fazendo um recorte sem distorção */
+    border-radius: 100%; /* círculo */
+    display: block;
+    margin: 0 auto; /* top/bottom left/right */
+    margin-bottom: 24px;
 }
