@@ -1,0 +1,37 @@
+/* Iniciando meu primeiro arquivo CSS */
+
+.container {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+}
+
+.destaque {
+    color: red;
+}
+
+.profile__header img {
+    display: inherit;
+}
+
+div.profile__about {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    justify-content: center;
+    width: 650px;
+}
+
+.profile__about div {
+    background-color: #8d5fe9;
+    padding: 16px;
+    margin: 10px;
+}
+
+.profile__about .destaque {
+    color: white;
+}
+
+a.destaque {
+    color: blue;
+}
