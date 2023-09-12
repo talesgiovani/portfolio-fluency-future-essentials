@@ -1,4 +1,11 @@
-/* Iniciando meu primeiro arquivo CSS */
+/* Comentário CSS */
+
+body {
+    color: #444; /* #444 -> #444444 */
+    background: rgb(109,194,142);
+    background: linear-gradient(90deg, rgba(109,194,142,1) 0%, rgba(214,255,203,1) 50%, rgba(109,194,142,1) 100%);
+    min-height: 100vh;
+}
 
 .container {
     max-width: 650px;
@@ -9,17 +16,6 @@
 
 .destaque {
     color: red;
-}
-
-.profile__header img {
-    display: inherit;
-}
-
-div.profile__about {
-    display: grid;
-    grid-template-rows: 50% 50%;
-    justify-content: center;
-    width: 650px;
 }
 
 .profile__about div {
