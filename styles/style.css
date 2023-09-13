@@ -88,3 +88,9 @@ a.destaque {
     width: 100%;
     text-align: center;
 }
+
+@media screen and (max-width:720px) {
+    .profile__about {
+        font-size: 20px;
+    }
+}
