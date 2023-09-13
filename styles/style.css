@@ -46,6 +46,7 @@ a.destaque {
 
 .profile {
     margin-top: 100px;
+    margin-bottom: 56px;
 }
 
 .profile__header img {
@@ -56,4 +57,34 @@ a.destaque {
     display: block;
     margin: 0 auto; /* top/bottom left/right */
     margin-bottom: 24px;
+}
+
+.links ul {
+    list-style: none;
+}
+
+.links a{
+    display: flex;
+    height: 56px;
+    border: solid #444 1px; /*style color thickness*/
+    border-radius: 35px;
+    text-decoration: none;
+    padding: 0 24px;
+    align-items: center; /* vertical */
+    justify-content: center; /* horizontal */
+    margin-bottom: 16px;
+    color: #444;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.links a:hover {
+    border: solid #fff 1px;
+    color: #fff;
+    background-color: #8d5fe9;
+}
+
+.links__item {
+    width: 100%;
+    text-align: center;
 }
