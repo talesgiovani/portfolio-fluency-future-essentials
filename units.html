@@ -1,25 +1,48 @@
-<style>
-    html {
-        font-size: 18px;
-    }
-    div.parent {
-        width: 500px;
-        height: 500px;
-        background: grey;
-        font-size: 1rem;
-    }
-    
-    div.units {
-        width: 10in;
-        height: 100mm;
-        background: blue;
-        font-size: 2em; /* EM:parent__font-size multiplicado por x em
-                           REM: root multiplicado por x rem*/
-        color: white;
-    }
-</style>
+<!--EM:parent*x em-->
+<!--REM: root*x rem-->
 
-<div class="parent">
-    Texto de Teste - PARENT
-    <div class="units">Texto de Teste - UNITS</div>
-</div>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units</title>
+</head>
+<body>
+    <style>
+        div.parent {
+            width: 500px;
+            height: 500px;
+            background: grey;
+            position: relative; /*posição relativa ao elemento superior (div pai)*/  
+            top: 5%;
+            left: 5%;
+        }
+        
+        div.units {
+            width: 100px;
+            height: 100px;
+            background: blue;
+            position: fixed; /*posicionamento independente no arquivo*/
+            bottom: 20px;
+            right: 20px;
+        }
+
+        div.test {
+            width: 200px;
+            height: 200px;
+            background: green; 
+            position: absolute; /*movimenta-se junta com a scrollbar*/
+            top: 50%;
+            left:50%;
+            transform: translate(-50%, -50%);  /*centralização horizontal e vertical*/
+        }
+    </style>
+
+    <div class="parent">
+        <div class="units"></div>
+    </div>
+    <div class="test"></div>
+    
+</body>
+</html>
